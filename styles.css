@@ -1,0 +1,117 @@
+/* รีเซ็ตการตั้งค่าเบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* จัดการรูปแบบของ body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* รูปแบบส่วนหัว */
+header {
+    background-color: #2d378d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* รูปแบบเนื้อหาหลัก */
+.main-content {
+    background-color: rgba(152, 201, 221, 0.966);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery .image-item:nth-child(1) img {
+    width: 25%; /* ปรับขนาดสำหรับรูปภาพแรก */
+    height: 150px;
+}
+
+.image-gallery .image-item:nth-child(2) img {
+    width: 25%; /* ปรับขนาดสำหรับรูปภาพที่สอง */
+    height: 150px;
+}
+
+.image-gallery .image-item:nth-child(3) img {
+    width: 25%; /* ปรับขนาดสำหรับรูปภาพที่สาม */
+    height: 150px;
+}
+
+.image-gallery .image-item:nth-child(4) img {
+    width: 25%; /* ปรับขนาดสำหรับรูปภาพที่สี่ */
+    height: 150px;
+}
+
+/* รูปแบบสำหรับแกลเลอรี่รูปภาพ */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* แบ่งเป็น 2 คอลัมน์ */
+    gap: 20px; /* เพิ่มช่องว่างระหว่างรูปภาพ */
+    margin-top: 20px;
+}
+
+.image-item {
+    text-align: center;
+}
+
+.main-content button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.main-content button:hover {
+    background-color: #45a049;
+}
+
+/* รูปแบบส่วนท้าย */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
